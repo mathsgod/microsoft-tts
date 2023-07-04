@@ -1,5 +1,6 @@
 {
     "name": "mathsgod/microsoft-tts",
+    "description": "Microsoft Text-to-Speech API for PHP",
     "require": {
         "guzzlehttp/guzzle": "^7.7"
     },
