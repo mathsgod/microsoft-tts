@@ -130,9 +130,9 @@ webm-24khz-16bit-mono-opus
         return $response->getBody()->getContents();
     }
 
-    public function save(string $text, string $file)
+    public function save(string $text, string $file, string $format = self::AUDIO_24KHZ_160KBITRATE_MONO_MP3, string $voice = "zh-HK-HiuGaaiNeural")
     {
-        $data = $this->convert($text);
+        $data = $this->convert($text, $format, $voice);
         return file_put_contents($file, $data);
     }
 }
